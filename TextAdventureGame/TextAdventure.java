@@ -1,6 +1,7 @@
 package TextAdventureGame;
 
 import java.util.Scanner;
+import java.io.File;
 
 class Room {
     int roomNumber;
@@ -12,10 +13,35 @@ class Room {
 }
 
 public class TextAdventure {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner userInput = new Scanner(System.in);
+        getData data = (filename) -> {
+            Scanner file = null;
+            try {
+                file = new Scanner(new File(filename));
+            } catch (java.io.IOException e) {
+                System.err.println("Can't open '" + filename + "' for reading.");
+                System.exit(1);
+            }
+            int numRooms = file.nextInt();
+            Room[] rooms = new Room[numRooms];
 
-        Room[] rooms = loadRoomsFromFile("text-adventure-rooms.txt");
+            int roomNum = 0;
+            while (file.hasNext()) {
+                Room r = getRoom(file);
+
+                if (r.roomNumber != roomNum) {
+                    System.err.println("Just read room # " + r.roomNumber);
+                    System.err.println(", but " + roomNum + " was expected.");
+                    System.exit(2);
+                }
+                rooms[roomNum] = r;
+                roomNum++;
+            }
+            file.close();
+            return rooms;
+        };
+        Room[] rooms = data.loadRoomsFromFile("data.txt");
 
         int currentRoom = 0;
         String ans;
@@ -37,33 +63,7 @@ public class TextAdventure {
                 System.out.println("Sorry, that room was not found");
             }
         }
-    }
 
-    public static Room[] loadRoomsFromFile(String filename) {
-        Scanner file = null;
-        try {
-            file = new Scanner(new java.io.File(filename));
-        } catch (java.io.IOException e) {
-            System.err.println("Can't open '" + filename + "' for reading.");
-            System.exit(1);
-        }
-        int numRooms = file.nextInt();
-        Room[] rooms = new Room[numRooms];
-
-        int roomNum = 0;
-        while (file.hasNext()) {
-            Room r = getRoom(file);
-
-            if (r.roomNumber != roomNum) {
-                System.err.println("Just read room # " + r.roomNumber);
-                System.err.println(", but " + roomNum + " was expected.");
-                System.exit(2);
-            }
-            rooms[roomNum] = r;
-            roomNum++;
-        }
-        file.close();
-        return rooms;
     }
 
     public static void showAllRooms(Room[] rooms) {
@@ -113,4 +113,8 @@ public class TextAdventure {
         r.numExits = i;
         return r;
     }
+}
+
+interface getData {
+    public Room[] loadRoomsFromFile(String filename);
 }
