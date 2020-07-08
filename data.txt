@@ -1,30 +1,31 @@
 5
 0
-PARLOR
-This is the parlor.
-It's a beautiful room.
+Bedroom
+It's 3:00 AM and 'Larry Wheels' wakes up to the sound of a woman screaming for help. Larry rapidly puts on clothes and looks out the window. Larry hears another scream but he can't see what's going on.
 
-There looks to be a kitchen to the "north".
-And there's a shadowy corridor to the "east".
+Larry looks at his bedroom door conflicted. Larry has a presentation to make
+at 9:00 AM for TEKsystems. Should Larry try to "help" the woman or "sleep"? 
 %%
-go north:1
-north:1
-go east:2
-east:2
+go help:1
+help:1
+go sleep:2
+sleep:2
+quit:-1
 %%
 1
-KITCHEN
-There is a long countertop with dirty dishes everywhere. Off to one side
-there is, as you'd expect, a refrigerator. You may open the "refrigerator"
-or "go back".
+FrontYard
+As Larry looks around for the woman, he sees a shadowy figure to his right. Right when Larry decides to go after that figure he hears the woman crying in pain to his left. Where should Larry go? "left" or "right"
 %%
-fridge:3
-refrigerator:3
+go left:3
+left:3
+go right:4
+right:4
 go back:0
 back:0
+quit:-1
 %%
 2
-CORRIDOR
+Morning
 The corridor has led to a dark room. The moment you step inside, the door
 slams shut behind you. There is no handle on the interior of the door.
 
@@ -40,15 +41,18 @@ You can "eat" some of the food or go "back".
 eat:4
 back:1
 go back:1
+quit:-1
 %%
 4
-EATFOOD
-The food is slimy and foul, but you manage to choke it down. Your stomach
-starts jumping like a frog in hot water. You feel faint. Sliding to the
-floor, the darkness closes in.
+Killer
+Larry sprints after the shadowy figure and runs into an alley. Larry looks down the alley but sees no one. Larry walks down towards the end of the alley. As Larry walks past a dumpster, the Killer puts Larry into a lock with a knife against his throat. The Killer says, 
+'You shouldn't have tried to play the hero' and slits his throat.
 
-You have died.
-(Type "quit" to die.)
+You died.
+(Type "quit" to exit the game || type "back" to go to your last choice || type "restart" to be sent to the beginning)
 %%
 quit:-1
+go back:1
+back:1
+restart:0
 %%

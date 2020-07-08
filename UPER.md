@@ -19,9 +19,9 @@
 </h2>
 *I have to start with the basis of the game, I will start by creating the rooms and checking if they are functional. I expect them to break but I will do my best to keep the players in the correct rooms.
 *I will then need to make a scanner to take user input to give commands to the game. With those commands the user will have a control on the choices and if the choice isnt available they shouldn't be able to make it.
-*
-*
-*
+*I will then have to plan all the possible outcomes or scenarios I want to implement into the game to make the more exciting.
+*I will reduce the players choice to only 2 per scenario but I want to add a go back functionality to go to their last choice if they messed up or regret their choice or restart to start from the beginning.
+*I want to be able to have a file most likely text file that will just 
 *
 *
 *

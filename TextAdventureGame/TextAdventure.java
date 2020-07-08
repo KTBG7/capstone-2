@@ -3,9 +3,9 @@ package TextAdventureGame;
 import java.util.Scanner;
 import java.io.File;
 
-class Room {
-    int roomNumber;
-    String roomName;
+class Choice {
+    int choiceNumber;
+    String choiceName;
     String description;
     int numExits;
     String[] exits = new String[10];
@@ -23,80 +23,81 @@ public class TextAdventure {
                 System.err.println("Can't open '" + filename + "' for reading.");
                 System.exit(1);
             }
-            int numRooms = file.nextInt();
-            Room[] rooms = new Room[numRooms];
+            int numchoices = file.nextInt();
+            Choice[] choices = new Choice[numchoices];
 
-            int roomNum = 0;
+            int choiceNum = 0;
             while (file.hasNext()) {
-                Room r = getRoom(file);
+                Choice c = getChoice(file);
 
-                if (r.roomNumber != roomNum) {
-                    System.err.println("Just read room # " + r.roomNumber);
-                    System.err.println(", but " + roomNum + " was expected.");
+                if (c.choiceNumber != choiceNum) {
+                    System.err.println("Just read choice # " + c.choiceNumber);
+                    System.err.println(", but " + choiceNum + " was expected.");
                     System.exit(2);
                 }
-                rooms[roomNum] = r;
-                roomNum++;
+                choices[choiceNum] = c;
+                choiceNum++;
             }
             file.close();
-            return rooms;
+            return choices;
         };
-        Room[] rooms = data.loadRoomsFromFile("data.txt");
+        Choice[] choices = data.loadchoicesFromFile("data.txt");
 
-        int currentRoom = 0;
+        int currentchoice = 0;
         String ans;
-        while (currentRoom >= 0) {
-            Room cur = rooms[currentRoom];
+        while (currentchoice >= 0) {
+            Choice cur = choices[currentchoice];
             System.out.println(cur.description);
-            System.out.println("> ");
+            System.out.println("================================ ");
             ans = userInput.nextLine();
-            // this is used to check if any of the exits that are type matches
+            // this is used to check if any of the choice's that are typed matches
             boolean found = false;
             for (int i = 0; i < cur.numExits; i++) {
                 if (cur.exits[i].equals(ans)) {
-                    // if they match it'll change the next room to that exits number
-                    currentRoom = cur.destinations[i];
+                    // if they match it'll change the next choice to that choice's number
+                    System.out.println("================================");
+                    currentchoice = cur.destinations[i];
                     found = true;
                 }
             }
             if (!found) {
-                System.out.println("Sorry, that room was not found");
+                System.out.println("That wasn't a choice!");
             }
         }
-
+        userInput.close();
     }
 
-    public static void showAllRooms(Room[] rooms) {
-        for (Room r : rooms) {
+    public static void showAllchoices(Choice[] choices) {
+        for (Choice c : choices) {
             String exitString = "";
-            for (int i = 0; i < r.numExits; i++) {
-                exitString += "\t" + r.exits[i] + " (" + r.destinations[i] + ")";
-                System.out.println(r.roomNumber + ") " + r.roomName);
+            for (int i = 0; i < c.numExits; i++) {
+                exitString += "\t" + c.exits[i] + " (" + c.destinations[i] + ")";
+                System.out.println(c.choiceNumber + ") " + c.choiceName);
                 System.out.println(exitString);
             }
         }
     }
 
-    public static Room getRoom(Scanner f) {
+    public static Choice getChoice(Scanner f) {
         if (!f.hasNextInt()) {
             return null;
         }
-        Room r = new Room();
+        Choice c = new Choice();
         String line;
 
-        // this will read the room number to check for errors
-        r.roomNumber = f.nextInt();
+        // this will read the choice number to check for errors
+        c.choiceNumber = f.nextInt();
         f.nextLine();
 
-        r.roomName = f.nextLine();
+        c.choiceName = f.nextLine();
 
-        r.description = "";
+        c.description = "";
         while (true) {
             line = f.nextLine();
             if (line.equals("%%")) {
                 break;
             }
-            r.description += line + "\n";
+            c.description += line + "\n";
         }
 
         int i = 0;
@@ -106,15 +107,15 @@ public class TextAdventure {
                 break;
             }
             String[] parts = line.split(":");
-            r.exits[i] = parts[0];
-            r.destinations[i] = Integer.parseInt(parts[1]);
+            c.exits[i] = parts[0];
+            c.destinations[i] = Integer.parseInt(parts[1]);
             i++;
         }
-        r.numExits = i;
-        return r;
+        c.numExits = i;
+        return c;
     }
 }
 
 interface getData {
-    public Room[] loadRoomsFromFile(String filename);
+    public Choice[] loadchoicesFromFile(String filename);
 }
