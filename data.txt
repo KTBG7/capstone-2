@@ -1,0 +1,66 @@
+5
+0
+Bedroom
+July 12th, 2020. Larry Wheels wakes up in his room. 'Larry is a software developer student who has a game project due tomorrow for the company that's training him.' Larry gets up from the bed lazily and stumbles to the kitchen.
+As Larry approaches the table, his dad asks him what he wants for breakfast, "cooked" breakfast or "cereal".
+%%
+cooked:1
+cereal:2
+quit:-1
+%%
+1
+Breakfast
+Dad asks, Do you want "pancakes" or "french toast"?
+%%
+cheerios:3
+frosties:4
+go back:0
+back:0
+quit:-1
+%%
+2
+Cereal
+Dad grabs the cereal boxes and asks, which one do you want, "cheerios" or "frosties"?
+%%
+cheerios:4
+frosties:6
+go back:0
+back:0
+quit:-1
+%%
+3
+REFRIGERATOR
+Inside the refrigerator you see food and stuff. It looks pretty nasty.
+You can "eat" some of the food or go "back".
+%%
+eat:4
+back:1
+go back:1
+quit:-1
+%%
+4
+Cheerios
+He gives Larry the cheerios and Larry eats his breakfast. As Larry was eating his breakfast, he remembers that he has a game project due tomorrow and looks at the clock. Larry has procrastinated the whole week and now only has
+today before his presentation. Larry quickly finishes and rushes into his room. Larry is panicking about his project and begins to think whether he should "copy" an online tutorial, or "pay" someone to do it. What should Larry
+do?
+%%
+copy:8
+pay: 10
+go back:2
+back:2
+quit:-1
+restart:0
+%%
+5
+French Toast
+Dad cooks some blueberry french toast and gives it to Larry. As Larry was eating his breakfast, he remembers that he has a game project due tomorrow and looks at the clock. Larry has procrastinated the whole week and now only has
+today before his presentation. Larry quickly finishes and rushes into his room. Larry begins to panick but while panicking, the teacher sends out a notice that the presentation was delayed. Larry decides that it'll be a problem for
+later so he begins to think, should he "sleep" or "go out"?
+%%
+sleep:7
+go out:9
+out:9
+go back:1
+back:1
+quit: -1
+%%
