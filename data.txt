@@ -1,66 +1,67 @@
-5
+17
 0
 Bedroom
-July 12th, 2020. Larry Wheels wakes up in his room. 'Larry is a software developer student who has a game project due tomorrow for the company that's training him.' Larry gets up from the bed lazily and stumbles to the kitchen.
-As Larry approaches the table, his dad asks him what he wants for breakfast, "cooked" breakfast or "cereal".
+March 30th, 1974 3:00 AM CST. Larry Wheels wakes up to chilling scream. Larry jumps off his bed and quickly looks out the window. The street pitch black with no one in sight.
+Larry thinks he must've just had a nightmare and leaves the window. As he's about to lay back down he hears another scream, it sounded closer and he could tell it was a woman.
+Larry begins to think, 'Should I "help" her or go back to "sleep" since I have a project due tomorrow?
 %%
-cooked:1
-cereal:2
+help:1
+sleep:2
 quit:-1
 %%
 1
-Breakfast
-Dad asks, Do you want "pancakes" or "french toast"?
+Help
+Larry quickly puts on clothes and shoes and runs out of his house. He looks around to see if he can see them better now but still nothing. He then hears scream to his left, but this scream ringed in his ear. It was filled with pain and fear. Larrys decides to head towards the scream when he suddenly sees a man run across the street to the right. Larry is conflicted on whether he should go help the woman to his "left" or go after that shady man on his "right".
 %%
-cheerios:3
-frosties:4
+left:3
+right:5
 go back:0
 back:0
-quit:-1
-%%
-2
-Cereal
-Dad grabs the cereal boxes and asks, which one do you want, "cheerios" or "frosties"?
-%%
-cheerios:4
-frosties:6
-go back:0
-back:0
-quit:-1
-%%
-3
-REFRIGERATOR
-Inside the refrigerator you see food and stuff. It looks pretty nasty.
-You can "eat" some of the food or go "back".
-%%
-eat:4
-back:1
-go back:1
-quit:-1
-%%
-4
-Cheerios
-He gives Larry the cheerios and Larry eats his breakfast. As Larry was eating his breakfast, he remembers that he has a game project due tomorrow and looks at the clock. Larry has procrastinated the whole week and now only has
-today before his presentation. Larry quickly finishes and rushes into his room. Larry is panicking about his project and begins to think whether he should "copy" an online tutorial, or "pay" someone to do it. What should Larry
-do?
-%%
-copy:8
-pay: 10
-go back:2
-back:2
 quit:-1
 restart:0
 %%
-5
-French Toast
-Dad cooks some blueberry french toast and gives it to Larry. As Larry was eating his breakfast, he remembers that he has a game project due tomorrow and looks at the clock. Larry has procrastinated the whole week and now only has
-today before his presentation. Larry quickly finishes and rushes into his room. Larry begins to panick but while panicking, the teacher sends out a notice that the presentation was delayed. Larry decides that it'll be a problem for
-later so he begins to think, should he "sleep" or "go out"?
+3
+Left
+Larry sprints towards the the scream and with every step he could accurately discern where she was. When Larry got to her, he sees the woman laying in a pool of blood on her side. She had been stripped of all clothes and was brutally stabbed. Larry is stuck deciding whether he should "grab" her and help her or "call" 911 first.
 %%
-sleep:7
-go out:9
-out:9
+grab:7
+call:9
 go back:1
 back:1
+quit:-1
+restart:0
+%%
+7
+Grab
+Larry decides to grab her and while turning her to get her in a more comfortable position, he accidentally grabs the knife that she was stabbed with. The knife had still been in her since she knew that taking it out would only speed up her bleeding. Because of Larry, she begins to bleed much quicker. Larry becomes scared and as he begins to call 911, she ends up bleeding out. Larry decides whether or not he should continue to "call" or just "leave" her.
+%%
+call: 11
+leave:13
+go back:3
+back:3
 quit: -1
+restart: 0
+%%
+11
+Call
+Larry turns on his phone and realizes that it's now 5 AM. Larry calls 911 quickly and then leaves to get some rest before his project.
+Larry wakes up to his alarm and immediately starts remembering the what happened. He checks the clock and realizes that he has to get ready for his project. When he finishes getting ready he realizes that there's only 30 minutes until he has to present. He doesn't have enough gas to go to work so he would have to get pump some on the way to work. Should Larry "drive" or take "public" transport?
+%%
+drive:15
+public:17
+go back: 7
+back:7
+quit:-1
+restart:0
+%%
+17
+Public
+Larry goes to the train station and gets on the train. Right before the doors close, a man runs onto the train. He stands at the end of the cart and looks eyes for a second with Larry. The man looks alarmed and moves onto the next cart. Larry finds it suspicious, should he "follow" or "stay"?
+%%
+follow:19
+stay:21
+go back:11
+back:11
+quit:-1
+restart:0
 %%

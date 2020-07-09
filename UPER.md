@@ -21,15 +21,16 @@
 *I will then need to make a scanner to take user input to give commands to the game. With those commands the user will have a control on the choices and if the choice isnt available they shouldn't be able to make it.
 *I will then have to plan all the possible outcomes or scenarios I want to implement into the game to make the more exciting.
 *I will reduce the players choice to only 2 per scenario but I want to add a go back functionality to go to their last choice if they messed up or regret their choice or restart to start from the beginning.
-*I want to be able to have a file most likely text file that will just 
+*I want to be able to have a file most likely text file that will just have all the choice paths and the descriptions and then just pull everything from that file. 
 *
 *
 *
 <h2>
     3. Executing the Plan
 </h2>
-*
-*
+*I have a data.txt that holds all my data that will be holding the choices and paths. I have also gotten the program functioning by making simple functions first without implements 
+much of the stuff we've learned yet since I'm just trying to get it running.
+*I added the back and restart buttons and have added some choices and now I'm making a key so that I will be able to know what choices trigger what ending etc.
 *
 *
 *

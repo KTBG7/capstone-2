@@ -47,7 +47,7 @@ public class TextAdventure {
         String ans;
         while (currentchoice >= 0) {
             Choice cur = choices[currentchoice];
-            System.out.println(cur.description);
+           System.out.println(cur.description);
             System.out.println("================================ ");
             ans = userInput.nextLine();
             // this is used to check if any of the choice's that are typed matches
