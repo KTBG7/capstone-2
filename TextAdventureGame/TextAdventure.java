@@ -3,7 +3,18 @@ package TextAdventureGame;
 import java.util.Scanner;
 import java.io.File;
 
+
+class Choice {
+    int choiceNumber;
+    String choiceName;
+    String description;
+    int numExits;
+    String[] exits = new String[35];
+    int[] destinations = new int[35];
+}
+
 public class TextAdventure {
+
     public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         getData data = (filename) -> {
@@ -43,7 +54,7 @@ public class TextAdventure {
             ans = userInput.nextLine();
             // this is used to check if any of the choice's that are typed matches
             boolean found = false;
-            for (int i = 0; i < cur.numExits; i++) {
+            for (int i = 0; i < cur.exits.length; i++) {
                 if (cur.exits[i].equals(ans)) {
                     // if they match it'll change the next choice to that choice's number
                     System.out.println("================================");

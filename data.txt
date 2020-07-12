@@ -1,4 +1,4 @@
-17
+35
 0
 Bedroom
 March 30th, 1974 3:00 AM CST. Larry Wheels wakes up to chilling scream. Larry jumps off his bed and quickly looks out the window. The street pitch black with no one in sight.
@@ -15,8 +15,6 @@ Larry quickly puts on clothes and shoes and runs out of his house. He looks arou
 %%
 left:3
 right:5
-go back:0
-back:0
 quit:-1
 restart:0
 %%
@@ -26,8 +24,6 @@ Larry puts on his music, and sleeps. He wakes up a bit later than usual so he ru
 %%
 drive:4
 train:6
-go back: 0
-back:0
 quit:-1
 restart:0
 %%
@@ -77,12 +73,12 @@ restart:0
 Grab
 Larry decides to grab her and while turning her to get her in a more comfortable position, he accidentally grabs the knife that she was stabbed with. The knife had still been in her since she knew that taking it out would only speed up her bleeding. Because of Larry, she begins to bleed much quicker. Larry becomes scared and as he begins to call 911, she ends up bleeding out. Larry decides whether or not he should continue to "call" or just "leave" her.
 %%
-call: 11
+call:11
 leave:13
 go back:3
 back:3
-quit: -1
-restart: 0
+quit:-1
+restart:0
 %%
 8
 Off
@@ -124,7 +120,7 @@ Larry wakes up to his alarm and realizes he's going to be late. He gets ready an
 %%
 drive:4
 train:6
-go back: 7
+go back:7
 back:7
 quit:-1
 restart:0
@@ -219,7 +215,7 @@ Truth
 Larry explains what he heard last night and the man he saw on the train. His friend looks amazed and concerned. He asks, 'Do you want the Detective's number?' "Yes" or "No"?
 %%
 Yes:28
-No:29
+No:23
 go back:14
 back:14
 quit:-1
@@ -240,8 +236,128 @@ restart:0
 Yes
 Larry takes the Detective's number and gives him call. He goes to his office and begins talking to him. The Detective says, 'So you live on Elm Street, did you hear anything at around 3:00AM this morning?'. Should Larry say the "Truth" or "Lie"?
 %%
-Truth:30
-Lie:31
+Truth:28
+Lie:30
+quit:-1
+restart:0
+%%
+23
+No
+Larry drives home after work. When Larry begins to pull into his drive way he notices a car parked in front of his house. He parks and gets out and simultaniously a man walks out of the parked car. The man walks up and says, 'Hello are you Larry Wheels?' and Larry responds, 'Yes that's me!' and the man continues, 'I'm the Detective for the murder that happened this morning, the evidence shows that it was most likely a man and he couldn't have gone far, could I speak with you?'. Should Larry "Speak" with the Detective or "Walk" away?
+%%
+Speak:31
+Walk:32
+go back:21
+back:21
+quit:-1
+restart:0
+%%
+24
+Truth
+Larry tells a partial truth, 'Well actually I did hear some commotion but I had no contact with what happened and I didn't see anyone. Although this morning when I took there was a weird man who looked anxious and paranoid, I tried to chase him but he ran.' The Detective looks confused, 'So you're telling me you had no impact at all?' Larry responds, 'No' The Detective says, 'Can I check your bag?' Should Larry "Give" his backpack or "refuse" to give it?
+Give:33
+refuse:34
+quit:-1
+restart:0
+%%
+25
+Lie
+Larry says, 'I didn't hear anything about it, this is my first time hearing about. Sorry that I can't offer too much help. I'll call you if anything comes up' The Detective says, 'I'm afraid that won't be possible. There was an item found on your property and you'll have to come with me' Two officers come into the room and they cuff Larry. Larry is in trial, there is a lot of evidence against him. He loses his trial and gets sent to Life in prison!
+
+You spent your days in prison until you died.
+(Type "quit" to exit the game || type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+26
+Look
+Larry looks around nervously and the Detective looks at him and calls signals his car. Two officers walk out and arrest him. Larry is sent to a trial but unfortunately they find the knife that was used to kill the woman... It must've been placed there when he set his bag down on the train... They choose the Death Sentence on Larry and put him on the Electrical chair.
+
+You died.
+(Type "quit" to exit the game || type "back" to go to your last choice || type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+27
+Bite
+Larry bites his nails nervously, the Detective takes that as a sign and signals two officers to come arrest Larry. Larry is put in trial and they found the knife that was used to stab the woman in his backpack... it was probably stashed there while on the train... and this caused the jury to choose the Death Sentence. They chose his method of death to be the firing squad!
+
+You died.
+(Type "quit" to exit the game ||type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+28
+Yes
+Larry sets up the appointment with the Detective to tell him what he knows about the murder. He gets to the Detective's office and begins to explain, 'Hello, I was at my house when I heard a scream, I tried to see what was happening but there was no one in sight and it was really dark.' The Detective responds, 'Well that's interesting, you're the only one who has given me any type of feedback, are you sure you didn't see anything, you're a perfect match for a potential suspect, I'd like to put you on trial.' The moment he says that, two cops walk into the room and cuff Larry.
+
+The Trial begins and there's not much evidence other than unfortunate timing. They ask himi if he's seen anything. Should he "Explain" the man he saw or "Deny" it?
+%%
+Explain:29
+Deny:37
+quit:-1
+restart:0
+%%
+29
+Explain
+Larry begins explaining, 'Well, I woke up because I heard a scream, I wasn't able to see anyone but I didn't do anything there.' The prosecution disregards all he says as they find the knife on his property that was used to kill the woman. Larry fails to explain a logicaly why it would be there and quickly loses the case. He gets Life sentence in prison and dies when he fails a bench PR which falls on his neck...
+
+You died.
+(Type "quit" to exit the game || type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+30
+Lie
+Larry lies about not hearing anything on his street. He explains how he slept with music on which is probably why he didn't hear the murder on his street. The Detective doesn't buy this lie and puts him in cuffs for lying. Once in trial, the Jury didn't take him lying lightly and they found the knife on his front porch which leads them to choose Death Row, Death by hanging. 
+
+You died.
+(Type "quit" to exit the game || type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+31
+Speak
+Larry tells the Detective what he heard and what he saw but he was really nervous. He keeps looking around while speaking and the Detective decides to cuff him and put him on trial. The prosecution couldn't get evidence to prove him guilty. Larry walks away innocent, he gets home and notices his door is open. He searches the house and doesn't see anything out of the ordinary. He walks into his room, gets knocked out and stabbed by the killer.
+
+You died.
+(Type "quit" to exit the game || type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+32
+Walk
+Larry attempts to walk away, the Detective takes an offense to it and gets two cops to arrest him. His case turns out really bad on the trial, him walking away was seen as a sign of an attempt to escape. Larry is seen as a coward and was hung.
+
+You died. You were branded as a coward and you were hung. You reached the worst ending!
+(Type "quit" to exit the game || type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+33
+Give
+Larry gives his backpack to the Detective, and the Detective sees the knife in the backpack. He immediately calls over the cops and takes Larry to the county jail. Larry can't explain why he had the knife, but it did seem like he just didn't know. He was given 30 years in prison.
+
+You Lived!
+(Type "quit" to exit the game || type "restart" to be sent to the beginning)
+%%
+quit:-1
+restart:0
+%%
+34
+Refuse
+Larry refuses, he is taken to the county jail by the Detective they find the knife in his backpack. Although the fact that he didn't know how it got to his backpack was apparent, the refusal got the doubt of the Jury so he got life in prison.
+
+You lived... but you got life in prison, but hey you lived!
+(Type "quit" to exit the game || type "restart" to be sent to the beginning)
+%%
 quit:-1
 restart:0
 %%
