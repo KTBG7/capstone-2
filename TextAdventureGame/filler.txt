@@ -1,0 +1,58 @@
+5
+0
+Bedroom
+It's 3:00 AM and 'Larry Wheels' wakes up to the sound of a woman screaming for help. Larry rapidly puts on clothes and looks out the window. Larry hears another scream but he can't see what's going on.
+
+Larry looks at his bedroom door conflicted. Larry has a presentation to make
+at 9:00 AM for TEKsystems. Should Larry try to "help" the woman or "sleep"? 
+%%
+go help:1
+help:1
+go sleep:2
+sleep:2
+quit:-1
+%%
+1
+FrontYard
+As Larry looks around for the woman, he sees a shadowy figure to his right. Right when Larry decides to go after that figure he hears the woman crying in pain to his left. Where should Larry go? "left" or "right"
+%%
+go left:3
+left:3
+go right:4
+right:4
+go back:0
+back:0
+quit:-1
+%%
+2
+Morning
+The corridor has led to a dark room. The moment you step inside, the door
+slams shut behind you. There is no handle on the interior of the door.
+
+There is no escaping. Type "quit" to die.
+%%
+quit:-1
+%%
+3
+REFRIGERATOR
+Inside the refrigerator you see food and stuff. It looks pretty nasty.
+You can "eat" some of the food or go "back".
+%%
+eat:4
+back:1
+go back:1
+quit:-1
+%%
+4
+Killer
+Larry sprints after the shadowy figure and runs into an alley. Larry looks down the alley but sees no one. Larry walks down towards the end of the alley. As Larry walks past a dumpster, the Killer puts Larry into a lock with a knife against his throat. The Killer says, 
+'You shouldn't have tried to play the hero' and slits his throat.
+
+You died.
+(Type "quit" to exit the game || type "back" to go to your last choice || type "restart" to be sent to the beginning)
+%%
+quit:-1
+go back:1
+back:1
+restart:0
+%%

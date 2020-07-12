@@ -1,1 +1,2 @@
-Ending 1: help/left/grab/call/public
+Ending 1: help/left/grab/call/train/follow/yes
+Ending 2: help/right/door = death

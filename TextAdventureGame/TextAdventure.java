@@ -3,24 +3,15 @@ package TextAdventureGame;
 import java.util.Scanner;
 import java.io.File;
 
-class Choice {
-    int choiceNumber;
-    String choiceName;
-    String description;
-    int numExits;
-    String[] exits = new String[10];
-    int[] destinations = new int[10];
-}
-
 public class TextAdventure {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner userInput = new Scanner(System.in);
         getData data = (filename) -> {
             Scanner file = null;
             try {
                 file = new Scanner(new File(filename));
             } catch (java.io.IOException e) {
-                System.err.println("Can't open '" + filename + "' for reading.");
+                System.err.println("Can't open '" + filename + "'.");
                 System.exit(1);
             }
             int numchoices = file.nextInt();
@@ -47,7 +38,7 @@ public class TextAdventure {
         String ans;
         while (currentchoice >= 0) {
             Choice cur = choices[currentchoice];
-           System.out.println(cur.description);
+            System.out.println(cur.description);
             System.out.println("================================ ");
             ans = userInput.nextLine();
             // this is used to check if any of the choice's that are typed matches
@@ -114,6 +105,7 @@ public class TextAdventure {
         c.numExits = i;
         return c;
     }
+
 }
 
 interface getData {
