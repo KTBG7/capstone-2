@@ -149,13 +149,15 @@ restart:0
 *
 14
 Stay
-Larry brushes it off and waits for his stop. He gets to work and starts presenting. When he finishes his presentation, his friend asks,'Did you hear anything last night? I heard on the radio that a woman was killed on Elm Street!'. Should Larry tell the "truth" or "lie"?
+Larry brushes it off and waits for his stop. He gets to work and starts presenting. When he finishes his presentation, his friend asks,'Did you hear anything last night? I heard on the radio that a woman was killed on Elm Street!'. Should Larry tell the "Truth" or "Lie"?
 *
 Truth:20
 Lie:21
+go back:6
+back:6
 quit:-1
 restart:0
-*  
+*
 15
 No
 His friend starts explaining, 'Yeah it's crazy! Apparently a woman was stabbed  to death on Elm Street last night. I can't believe you didn't hear anything though. I have the detectives number, he was looking for witnesses, do you want his number?'. "Yes" or "No"?
@@ -168,6 +170,7 @@ quit:-1
 restart:0
 *
 16
+Yes
 Larry explains, 'Yes I heard it, it was really late at night but I didn't see anything happen.' His friend says, 'Oh really?! I have the detective's number and hes been looking for a witness, you should give him a call! Do you want his number?' "Yes" or "No"?
 *
 Yes:22
@@ -179,10 +182,10 @@ restart:0
 *
 17
 Yes
-Larry takes the number and gives the Detective a call. They make set up an appointment and Larry goes to his office right after work. Larry gets to the Detective's office. The Detective starts, 'Hello Larry, so you told me you heard what happened last night would you mind telling me what you heard?'. Larry agrees and puts his backpack down, there's a metallic thud, Larry glances at it with a confused look but proceeds. Should Larry tell the Detective the "truth" or "lie"?
+Larry takes the number and gives the Detective a call. They make set up an appointment and Larry goes to his office right after work. Larry gets to the Detective's office. The Detective starts, 'Hello Larry, so you told me you heard what happened last night would you mind telling me what you heard?'. Larry agrees and puts his backpack down, there's a metallic thud, Larry glances at it with a confused look but proceeds. Should Larry tell the Detective the "Truth" or "Lie"?
 *
-truth:24
-lie:25
+Truth:24
+Lie:25
 quit:-1
 restart:0
 *
@@ -199,10 +202,10 @@ restart:0
 *
 19
 No
-Larry says, 'No' and goes home after work. His friend grows suspicious due to the sudden defiance to cooperation. Larry goes back on the train to go home, but when he gets home he sees a car at the front of his house. He goes to his house and a man comes out of the car, its the Detective. The Detective asks if he can question him. Should Larry "look" around nervously or "bite" his nails?
+Larry says, 'No' and goes home after work. His friend grows suspicious due to the sudden defiance to cooperation. Larry goes back on the train to go home, but when he gets home he sees a car at the front of his house. He goes to his house and a man comes out of the car, its the Detective. The Detective asks if he can question him. Should Larry "Look" around nervously or "Bite" his nails?
 *
-look:26
-bite:27
+Look:26
+Bite:27
 go back:13
 back:13
 quit:-1
@@ -252,14 +255,41 @@ restart:0
 *
 24
 Truth
-Larry tells a partial truth, 'Well actually I did hear some commotion but I had no contact with what happened and I didn't see anyone. Although this morning when I took there was a weird man who looked anxious and paranoid, I tried to chase him but he ran.' The Detective looks confused, 'So you're telling me you had no impact at all?' Larry responds, 'No' The Detective says, 'Can I check your bag?' Should Larry "Give" his backpack or "refuse" to give it?
+Larry tells a partial truth, 'Well actually I did hear some commotion but I had no contact with what happened and I didn't see anyone. Although this morning when I took there was a weird man who looked anxious and paranoid, I tried to chase him but he ran.' The Detective looks confused, 'So you're telling me you had no impact at all?' Larry responds, 'No' The Detective says, 'Can I check your bag?' Should Larry "Give" his backpack or "Refuse" to give it?
+*
 Give:33
-refuse:34
+Refuse:34
 quit:-1
 restart:0
 *
 25
 Lie
+       .---.
+       |---|
+       |---|
+       |---|
+   .---^ - ^---.
+   :___________:
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |.-|
+      |.-'**|
+       \***/
+        \*/
+         V
+
+        '
+         ^'
+        (_)
+
+
+
+    -.   ^   .-
+______\'.|.'/________
 Larry says, 'I didn't hear anything about it, this is my first time hearing about. Sorry that I can't offer too much help. I'll call you if anything comes up' The Detective says, 'I'm afraid that won't be possible. There was an item found on your property and you'll have to come with me' Two officers come into the room and they cuff Larry. Larry is in trial, there is a lot of evidence against him. He loses his trial and gets sent to Life in prison!
 
 You spent your days in prison until you died.
@@ -270,6 +300,32 @@ restart:0
 *
 26
 Look
+       .---.
+       |---|
+       |---|
+       |---|
+   .---^ - ^---.
+   :___________:
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |.-|
+      |.-'**|
+       \***/
+        \*/
+         V
+
+        '
+         ^'
+        (_)
+
+
+
+    -.   ^   .-
+______\'.|.'/________
 Larry looks around nervously and the Detective looks at him and calls signals his car. Two officers walk out and arrest him. Larry is sent to a trial but unfortunately they find the knife that was used to kill the woman... It must've been placed there when he set his bag down on the train... They choose the Death Sentence on Larry and put him on the Electrical chair.
 
 You died.
@@ -280,6 +336,32 @@ restart:0
 *
 27
 Bite
+       .---.
+       |---|
+       |---|
+       |---|
+   .---^ - ^---.
+   :___________:
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |.-|
+      |.-'**|
+       \***/
+        \*/
+         V
+
+        '
+         ^'
+        (_)
+
+
+
+    -.   ^   .-
+______\'.|.'/________
 Larry bites his nails nervously, the Detective takes that as a sign and signals two officers to come arrest Larry. Larry is put in trial and they found the knife that was used to stab the woman in his backpack... it was probably stashed there while on the train... and this caused the jury to choose the Death Sentence. They chose his method of death to be the firing squad!
 
 You died.
@@ -301,6 +383,32 @@ restart:0
 *
 29
 Explain
+       .---.
+       |---|
+       |---|
+       |---|
+   .---^ - ^---.
+   :___________:
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |.-|
+      |.-'**|
+       \***/
+        \*/
+         V
+
+        '
+         ^'
+        (_)
+
+
+
+    -.   ^   .-
+______\'.|.'/________
 Larry begins explaining, 'Well, I woke up because I heard a scream, I wasn't able to see anyone but I didn't do anything there.' The prosecution disregards all he says as they find the knife on his property that was used to kill the woman. Larry fails to explain a logicaly why it would be there and quickly loses the case. He gets Life sentence in prison and dies when he fails a bench PR which falls on his neck...
 
 You died.
@@ -311,6 +419,32 @@ restart:0
 *
 30
 Lie
+       .---.
+       |---|
+       |---|
+       |---|
+   .---^ - ^---.
+   :___________:
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |//|
+      |  |.-|
+      |.-'**|
+       \***/
+        \*/
+         V
+
+        '
+         ^'
+        (_)
+
+
+
+    -.   ^   .-
+______\'.|.'/________
 Larry lies about not hearing anything on his street. He explains how he slept with music on which is probably why he didn't hear the murder on his street. The Detective doesn't buy this lie and puts him in cuffs for lying. Once in trial, the Jury didn't take him lying lightly and they found the knife on his front porch which leads them to choose Death Row, Death by hanging.
 
 You died.
