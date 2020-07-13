@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.File;
 
 
-public class TextAdventure {
+public class TextAdventure extends Abstract {
 
     public static void main(String[] args) {
 
@@ -59,7 +59,7 @@ public class TextAdventure {
         }
         userInput.close();
     }
-
+    
     public static void showAllchoices(Choice[] choices) {
         for (Choice c : choices) {
             String exitString = "";
@@ -108,8 +108,4 @@ public class TextAdventure {
         return c;
     }
 
-}
-
-interface getData {
-    public Choice[] loadchoicesFromFile(String filename);
 }

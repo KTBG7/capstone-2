@@ -9,8 +9,8 @@
 *For this capstone, I have to create a terminal based game and there will be a lot of blockers that I will face. One of those would be figuring out whether or not I want to make a GUI based game or if I will just stray from using a library.
 *If I use a library, I will most likely encounter problems that I haven't faced before that might take up a lot of time trying to debug it.
 *I want to create a text adventure game but idk if time restraints will allow it, there will probably be a lot of hours dropped but that is my choice.
-*
-*
+*Creating a good plot that takes the players complete attention is something to strive for considering text adventure games are the heaviest on the plot aspect.
+*Successfully creating a system where I can make the choices easier for the user to input, hopefully a scanner that takes strings.
 *
 *
 *
@@ -31,8 +31,9 @@
 *I have a data.txt that holds all my data that will be holding the choices and paths. I have also gotten the program functioning by making simple functions first without implements 
 much of the stuff we've learned yet since I'm just trying to get it running.
 *I added the back and restart buttons and have added some choices and now I'm making a key so that I will be able to know what choices trigger what ending etc.
-*
-*
+*Started adding more choices to the plot, had some complications, Lost 6 hours worth of plot due to some weird bug, was a really big set back,
+this caused a whole lot of trouble since my game ended up breaking later on and wouldn't run properly.
+*Troubleshooting took a lot of my time to just get the game to run but overall creating a story that somewhat made sense after I lost my whole other plot was hard. Had to come up with a different story path due to limited time, the plot felt a rushed.
 *
 *
 *
@@ -40,10 +41,11 @@ much of the stuff we've learned yet since I'm just trying to get it running.
 <h2>
     4. Reflection / Refactor
 </h2>
-*
-*
-*
-*
+*I will definitely begin quadruple saving all my files as that set back really had me running here close to the deadline.
+*I will look more closely at every little detail since these little details caused a lot of countless hours of trouble shooting that could've
+been avoided if I had payed more attention.
+*Overall, the planning for the plot was good, I will just have to try to prevent needing to change the whole plot due to some deletion like this since the plot wasn't nearly as good as I wanted to be. The game could've 100% been much longer and could've been an actual fun experience to play.
+*Also, I really reflect on the fact of doing such a plot heavy game as it kind of forced me to go for a quicker solution for the game since the set back didn't really allow me to add some of the requirements due to the lack of time on my part due to the whole restructering.
 *
 *
 *

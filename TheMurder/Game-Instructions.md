@@ -2,6 +2,4 @@
 
 Place the instructions for how to play your game in this file.  The instructions should be clear enough for any non-technical computer user to understand and follow.
 
-
-
-
+For my TextAdventureGame, the instructions are very simple. There will be a story which will be displayed on the terminal, in the story there will be words in double quotes like "this". These words are the choices available and they must be typed exactly as they appear for the game to take the input else it'll throw an error saying that it isn't a choice. Furthermore, theres a go back/ back , either of those works, which will send you to your last choice. This is in case the player regrets their last choice; however, there are some choices at which you can't go back anymore, from there the player must play until the end. Last but not least, inputing quit will quit the game and inputing restart will take the user back to the beginning.
