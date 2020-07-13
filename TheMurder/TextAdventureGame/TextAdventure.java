@@ -1,4 +1,4 @@
-package TextAdventureGame;
+package TheMurder.TextAdventureGame;
 
 import java.util.Scanner;
 import java.io.File;
