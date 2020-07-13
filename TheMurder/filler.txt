@@ -1,0 +1,212 @@
+35
+0
+Bedroom
+March 30th, 1974 3:00 AM CST. Larry Wheels wakes up to chilling scream. Larry jumps off his bed and quickly looks out the window. The street pitch black with no one in sight.
+Larry thinks he must've just had a nightmare and leaves the window. As he's about to lay back down he hears another scream, it sounded closer and he could tell it was a woman.
+Larry begins to think, 'Should I "help" her or go back to "sleep" since I have a project due tomorrow?
+*
+help:1
+sleep:2
+quit:-1
+*
+1
+Help
+Larry quickly puts on clothes and shoes and runs out of his house. He looks around to see if he can see them better now but still nothing. He then hears scream to his left, but this scream ringed in his ear. It was filled with pain and fear. Larrys decides to head towards the scream when he suddenly sees a man run across the street to the right. Larry is conflicted on whether he should go help the woman to his "left" or go after that shady man on his "right".
+*
+left:3
+right:5
+quit:-1
+restart:0
+*
+2
+Sleep
+Larry puts on his music, and sleeps. He wakes up a bit later than usual so he rushes into the shower and gets ready for work. He checks his car and notices that he's running low on gas and needs to fill up before work. This might make him late and Larry is stuck between driving or taking the train. Should he "drive" or take the "train"?
+*
+drive:4
+train:6
+quit:-1
+restart:0
+*
+3
+Left
+Larry sprints towards the the scream and with every step he could accurately discern where she was. When Larry got to her, he sees the woman laying in a pool of blood on her side. She had been stripped of all clothes and was brutally stabbed. Larry is stuck deciding whether he should "grab" her and help her or "call" 911 first.
+*
+grab:7
+call:11
+go back:1
+back:1
+quit:-1
+restart:0
+*
+4
+Drive
+Larry hops into his car and goes to the nearest gas station. After pumping gas, he turns the radio on. 'Breaking news, there was a murder on Elm Street last night. No suspects found but...' the radio fills with static and distortion. Should Larry turn "off" the radio or continue "listen"?
+*
+off:8
+listen:10
+quit:-1
+restart:0
+*
+5
+Right
+Larry takes a right and sprints after the man! He follows him into an alley and loses sight of him. The man could've ran to the end of the alley and left but there was a door to midway through the alley where he could've gone. Should Larry run to the "end" or check the "door"?
+*
+end:9
+door:13
+go back:1
+back:1
+quit:-1
+restart:0
+*
+6
+Train
+Larry goes to the train station and gets on the first train. As the train doors began to close, a man runs into the train. Larry stares at the man, the man looks up and looks alarmed. The man quickly goes upstairs, Should Larry "follow" or "stay"?
+*
+follow:12
+stay:14
+go back:2
+back:2
+quit:-1
+restart:0
+*
+7
+Grab
+Larry decides to grab her and while turning her to get her in a more comfortable position, he accidentally grabs the knife that she was stabbed with. The knife had still been in her since she knew that taking it out would only speed up her bleeding. Because of Larry, she begins to bleed much quicker. Larry becomes scared and as he begins to call 911, she ends up bleeding out. Larry decides whether or not he should continue to "call" or just "leave" her.
+*
+call:11
+leave:13
+go back:3
+back:3
+quit:-1
+restart:0
+*
+8
+Off
+Larry turns off the radio and goes to work. While presenting, Larry's co-workers are staring at him with concern. He finishes presenting and sits next to his friend. His friend asks him, Do you know what happened on Elm Street? "Yes" or "No"?
+*
+Yes:16
+No:18
+go back:4
+back:4
+quit:-1
+restart:0
+*
+9
+End
+Larry sprints to the end and looks around but sees nothing. He hears the door in the alley shut and turns around and sees the Killer turning a corner too far chase. Larry goes home and sleeps for his presentation. Larry wakes and gets ready and is deciding whether he should ride the "train" or "drive" his car which needs gas?
+*
+train:6
+car:4
+go back:5
+back:5
+quit:-1
+restart:0
+*
+10
+Listen
+Larry leaves the radio on and keeps driving. Suddenly, the static fades away and he hears, '... it appears that the suspect is a man, he has gotten away but the authorities believe he must not be too far from Elm!'. He gets to work and presents then he sits next to his friend. His friend asks him, Do you know what happened on Elm Street? "Yes" or "No"?
+*
+Yes:16
+No:18
+go back:4
+back:4
+quit:-1
+restart:0
+*
+11
+Call
+Larry turns on his phone and realizes that it's now 5 AM. Larry calls 911 quickly and then leaves to get some rest before his project.
+Larry wakes up to his alarm and realizes he's going to be late. He gets ready and notices that he doesn't have enough gas to go to work so he would have to get pump some on the way to work. Should Larry "drive" or take the "train"?
+*
+drive:4
+train:6
+go back:7
+back:7
+quit:-1
+restart:0
+*
+12
+Follow
+Larry follows the man upstairs, he puts his backpack down and starts looking for him. He looks everywhere but the man is no longer there. He goes back and picks up his backpack and goes to work. During his presentation, there was many looks of concern while he was presenting. He finishes and his friend asks him if he knows about what happened last night. "Yes" or "No"?
+*
+Yes:13
+No:15
+go back:6
+back:6
+quit:-1
+restart:0
+*
+13
+Yes
+Larry tells his friend that he heard what happened but doesn't say anything else. His friend says he heard about it on the radio and was concerned. He tells Larry that there's a detective looking into the case and asks if Larry wants his number. Should he take the number, "Yes" or "No"?
+*
+Yes:17
+No:19
+go back:12
+back:12
+quit:-1
+restart:0
+*
+14
+Stay
+Larry brushes it off and waits for his stop. He gets to work and starts presenting. When he finishes his presentation, his friend asks,'Did you hear anything last night? I heard on the radio that a woman was killed on Elm Street!'. Should Larry tell the "truth" or "lie"?
+*
+Truth:20
+Lie:21
+go back:6
+back:6
+quit:-1
+restart:0
+*  
+15
+No
+His friend starts explaining, 'Yeah it's crazy! Apparently a woman was stabbed  to death on Elm Street last night. I can't believe you didn't hear anything though. I have the detectives number, he was looking for witnesses, do you want his number?'. "Yes" or "No"?
+*
+Yes:17
+No:19
+go back:12
+back:12
+quit:-1
+restart:0
+*
+16
+Larry explains, 'Yes I heard it, it was really late at night but I didn't see anything happen.' His friend says, 'Oh really?! I have the detective's number and hes been looking for a witness, you should give him a call! Do you want his number?' "Yes" or "No"?
+*
+Yes:22
+No:23
+back:8
+go back:8
+quit:-1
+restart:0
+*
+17
+Yes
+Larry takes the number and gives the Detective a call. They make set up an appointment and Larry goes to his office right after work. Larry gets to the Detective's office. The Detective starts, 'Hello Larry, so you told me you heard what happened last night would you mind telling me what you heard?'. Larry agrees and puts his backpack down, there's a metallic thud, Larry glances at it with a confused look but proceeds. Should Larry tell the Detective the "truth" or "lie"?
+*
+truth:24
+lie:25
+quit:-1
+restart:0
+*
+18
+No
+His friend starts explaining, 'Yeah it's crazy! Apparently a woman was stabbed  to death on Elm Street last night! I can't believe you didn't hear anything though it was right by your house... I have the detectives number, he was looking for witnesses, do you want his number?'. "Yes" or "No"?
+*
+Yes:22
+No:23
+go back:8
+back:8
+quit:-1
+restart:0
+*
+19
+No
+Larry says, 'No' and goes home after work. His friend grows suspicious due to the sudden defiance to cooperation. Larry goes back on the train to go home, but when he gets home he sees a car at the front of his house. He goes to his house and a man comes out of the car, its the Detective. The Detective asks if he can question him. Should Larry "look" around nervously or "bite" his nails?
+*
+look:26
+bite:27
+go back:13
+back:13
+quit:-1
+restart:0
+* 

@@ -3,7 +3,6 @@ package TextAdventureGame;
 import java.util.Scanner;
 import java.io.File;
 
-
 class Choice {
     int choiceNumber;
     String choiceName;
@@ -16,6 +15,7 @@ class Choice {
 public class TextAdventure {
 
     public static void main(String[] args) {
+
         Scanner userInput = new Scanner(System.in);
         getData data = (filename) -> {
             Scanner file = null;
@@ -44,17 +44,16 @@ public class TextAdventure {
             return choices;
         };
         Choice[] choices = data.loadchoicesFromFile("data.txt");
-
         int currentchoice = 0;
         String ans;
         while (currentchoice >= 0) {
             Choice cur = choices[currentchoice];
             System.out.println(cur.description);
-            System.out.println("================================ ");
+            System.out.println("================================");
             ans = userInput.nextLine();
             // this is used to check if any of the choice's that are typed matches
             boolean found = false;
-            for (int i = 0; i < cur.exits.length; i++) {
+            for (int i = 0; i < cur.numExits; i++) {
                 if (cur.exits[i].equals(ans)) {
                     // if they match it'll change the next choice to that choice's number
                     System.out.println("================================");
@@ -96,7 +95,7 @@ public class TextAdventure {
         c.description = "";
         while (true) {
             line = f.nextLine();
-            if (line.equals("%%")) {
+            if (line.equals("*")) {
                 break;
             }
             c.description += line + "\n";
@@ -105,7 +104,7 @@ public class TextAdventure {
         int i = 0;
         while (true) {
             line = f.nextLine();
-            if (line.equals("%%")) {
+            if (line.equals("*")) {
                 break;
             }
             String[] parts = line.split(":");
